@@ -1,0 +1,11 @@
+@model List<Empleado>
+
+<h1>Listado de Empleados</h1>
+
+
+@foreach (var item in Model)
+{
+    <h2>Nombre: @item.Nombre</h2>
+    <h2>Fecha Contratacion: @item.FechaContratacion</h2>
+
+}

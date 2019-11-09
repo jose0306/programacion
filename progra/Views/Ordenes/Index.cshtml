@@ -1,0 +1,14 @@
+@model List<Orden>
+
+<h1>Listado de Ordenes</h1>
+
+
+@foreach (var item in Model)
+{   
+    <h2>Orden: @item.Id</h2>
+    <h4>@item.Fecha</h4>
+    <h4>Empleado: @item.Empleado.Nombre</h4>
+    <h4>Cliente: @item.Cliente.Nombre</h4>
+    <h4>MontoTotal: @item.MontoTotal.ToString("c")</h4>
+
+}
